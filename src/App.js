@@ -13,9 +13,9 @@ const App = () => (
     <Router>
       <Header />
       <Routes>
-        <Route path="*" element={<ProductList />} />
+        <Route path="/" element={<ProductList />} />
         <Route path="/cart" element={<Cart />} />
-        <Route path="/" element={<NotFound />} />
+        <Route path="*" element={<NotFound />} />
       </Routes>
     </Router>
   </Provider>
